@@ -1,6 +1,5 @@
 // App.js
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from "react";
 
 import Home from "./page/home";
@@ -33,13 +32,12 @@ function App() {
                 </div>
                 <nav className="space-x-8 hidden md:block font-semibold">
                   {["Home", "Products", "Pricing", "Testimonials", "Contact"].map((item) => (
-                    <a
+                    <button
                       key={item}
-                      href={`#${item.toLowerCase()}`}
                       className="text-[#5C5F7C] hover:text-[#4B4FCA] transition"
                     >
                       {item}
-                    </a>
+                    </button>
                   ))}
                 </nav>
                 <button className="bg-[#4B4FCA] text-white px-6 py-2 rounded-full shadow hover:bg-[#3B3FBA] transition-transform transform hover:scale-105">
@@ -70,41 +68,41 @@ function App() {
                 <div>
                   <h3 className="text-xl font-semibold">Categories</h3>
                   <ul className="mt-3 space-y-2">
-                    <li><a href="#" className="hover:text-gray-300 transition">Groceries</a></li>
-                    <li><a href="#" className="hover:text-gray-300 transition">Home Essentials</a></li>
-                    <li><a href="#" className="hover:text-gray-300 transition">Fashion</a></li>
-                    <li><a href="#" className="hover:text-gray-300 transition">Electronics</a></li>
+                    <li><button className="hover:text-gray-300 transition">Groceries</button></li>
+                    <li><button className="hover:text-gray-300 transition">Home Essentials</button></li>
+                    <li><button className="hover:text-gray-300 transition">Fashion</button></li>
+                    <li><button className="hover:text-gray-300 transition">Electronics</button></li>
                   </ul>
                 </div>
 
                 <div>
                   <h3 className="text-xl font-semibold">Seller Services</h3>
                   <ul className="mt-3 space-y-2">
-                    <li><a href="#" className="hover:text-gray-300 transition">Sell on Diziting Kart</a></li>
-                    <li><a href="#" className="hover:text-gray-300 transition">Vendor Support</a></li>
-                    <li><a href="#" className="hover:text-gray-300 transition">Seller Dashboard</a></li>
-                    <li><a href="#" className="hover:text-gray-300 transition">Promote Your Products</a></li>
+                    <li><button className="hover:text-gray-300 transition">Sell on Diziting Kart</button></li>
+                    <li><button className="hover:text-gray-300 transition">Vendor Support</button></li>
+                    <li><button className="hover:text-gray-300 transition">Seller Dashboard</button></li>
+                    <li><button className="hover:text-gray-300 transition">Promote Your Products</button></li>
                   </ul>
                 </div>
 
                 <div>
                   <h3 className="text-xl font-semibold">Quick Links</h3>
                   <ul className="mt-3 space-y-2">
-                    <li><a href="#" className="hover:text-gray-300 transition">Home</a></li>
-                    <li><a href="#" className="hover:text-gray-300 transition">About Us</a></li>
-                    <li><a href="#" className="hover:text-gray-300 transition">Shop</a></li>
-                    <li><a href="#" className="hover:text-gray-300 transition">Contact</a></li>
+                    <li><button className="hover:text-gray-300 transition">Home</button></li>
+                    <li><button className="hover:text-gray-300 transition">About Us</button></li>
+                    <li><button className="hover:text-gray-300 transition">Shop</button></li>
+                    <li><button className="hover:text-gray-300 transition">Contact</button></li>
                   </ul>
                 </div>
 
                 <div>
                   <h3 className="text-xl font-semibold">Follow Us</h3>
                   <div className="mt-4 flex space-x-4">
-                    <a href="#" className="hover:text-gray-400 transition"><FaFacebook size={24} /></a>
-                    <a href="#" className="hover:text-gray-400 transition"><FaTwitter size={24} /></a>
-                    <a href="#" className="hover:text-gray-400 transition"><FaInstagram size={24} /></a>
-                    <a href="#" className="hover:text-gray-400 transition"><FaLinkedin size={24} /></a>
-                    <a href="#" className="hover:text-gray-400 transition"><FaYoutube size={24} /></a>
+                    <button className="hover:text-gray-400 transition">Fb</button>
+                    <button className="hover:text-gray-400 transition">Tw</button>
+                    <button className="hover:text-gray-400 transition">Ig</button>
+                    <button className="hover:text-gray-400 transition">Ln</button>
+                    <button className="hover:text-gray-400 transition">Yt</button>
                   </div>
                 </div>
               </div>
